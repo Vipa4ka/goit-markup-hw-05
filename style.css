@@ -89,18 +89,19 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
 .item :hover,
 .item :focus,
-.site-nav {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.site-nav .link.current {
   color: var(--accent-color);
 }
 
 .item {
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
   content: "";
@@ -317,6 +318,8 @@ h3 {
   color: #afb1b8;
   width: 44px;
   height: 44px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-marg:not(:last-child) {
@@ -361,12 +364,13 @@ h3 {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   fill: #afb1b8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-kliyenty:hover {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .kliyenty:not(:last-child) {
@@ -459,13 +463,16 @@ h3 {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
 .button:focus {
   color: var(--primary-bg-color);
   background: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-hero {
@@ -582,7 +589,6 @@ button {
 .partition-image:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ИКОНКИ */
@@ -614,8 +620,6 @@ button {
 .button-icon:hover {
   background-color: var(--accent-color);
   color: var(--background-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .kliyenty-icon,
