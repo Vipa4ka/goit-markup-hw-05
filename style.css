@@ -635,7 +635,7 @@ button {
 .icon {
   fill: var(--primary-bg-color);
 }
-/* MODAL----------------------------------- */
+/* MODAL--------------------------------------- */
 
 .backdrop.is-hidden {
   visibility: hidden;
